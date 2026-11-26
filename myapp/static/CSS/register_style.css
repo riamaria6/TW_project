@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+html, body {
+  background: linear-gradient(to bottom right, #671785, #e092fc);
+  color: #2b072f;
+  margin: 0;
+  padding: 40px 0;
+  min-height: 100vh;
+} 
+
+.page { 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  padding: 10px; 
+} 
+
+.card { 
+  background: #d9bce7;
+  width: 100%;
+  max-width: 480px; 
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(47, 0, 63, 0.26);
+} 
+
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1d072f;
+  margin-top: 0;
+  margin-bottom: 24px;
+  text-align: center;
+} 
+
+.row { 
+  margin-bottom: 16px; 
+  text-align: left; 
+} 
+
+.row label { 
+  display: block; 
+  margin-bottom: 6px; 
+  font-weight: 600; 
+  font-size: 14px;
+  color: #1d072f;
+} 
+
+input, select, textarea { 
+  width: 100%; 
+  padding: 10px 14px;
+  border-radius: 8px; 
+  border: 1px solid #d99dfa; 
+  background: #e8d4fd; 
+  color: #1d072f; 
+  font-size: 15px; 
+  box-sizing: border-box; 
+  outline: none;
+  transition: all 0.2s ease-in-out;
+} 
+
+input:focus, select:focus, textarea:focus {
+  border-color: #752293;
+  box-shadow: 0 0 0 3px rgba(117, 34, 147, 0.15);
+  background: #ffffff;
+} 
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.radio-group, .checkbox-grid { 
+  display: flex; 
+  gap: 16px; 
+  flex-wrap: wrap; 
+  align-items: center;
+  padding-top: 4px;
+} 
+
+.radio-group label, .checkbox-grid label { 
+  display: inline-flex; 
+  align-items: center; 
+  gap: 6px; 
+  font-weight: 400; 
+  font-size: 14px; 
+  margin-bottom: 0; 
+  cursor: pointer;
+} 
+
+input[type="radio"], input[type="checkbox"] { 
+  width: auto; 
+  padding: 0; 
+  margin: 0; 
+  accent-color: #752293; 
+  cursor: pointer;
+}
+
+/* File Input Styling */
+input[type="file"] {
+  padding: 8px 10px;
+  background: #e8d4fd;
+  cursor: pointer;
+}
+
+.two-col { 
+  display: flex;
+  gap: 12px; 
+} 
+
+.two-col > div { 
+  flex: 1; 
+} 
+
+.actions { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  margin-top: 24px; 
+} 
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background 0.2s, color 0.2s;
+  text-decoration: none;
+  text-align: center;
+} 
+
+.btn.primary {
+  background: #752293;
+  color: #efd7ff;
+} 
+
+.btn.primary:hover {
+  background: #5c1477;
+}
+
+.btn.ghost {
+  background: transparent;
+  color: #752293;
+  border-color: #6b1e86;
+} 
+
+.btn.ghost:hover {
+  background: rgba(117, 34, 147, 0.08);
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #5d11c2;
+} 
+
+.login-link a {
+  color: #752293;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}

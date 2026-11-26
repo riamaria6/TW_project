@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+{% load static %}
+<html lang="ro"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Home Page</title> 
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/home_style.css' %}"> 
+    <link rel="stylesheet" href="{% static 'CSS/cursor.css' %}">
+</head> 
+<body> 
+    <header> 
+        <div class="container"> 
+            <h1>Web Technologies Community</h1> 
+            <nav> 
+                <a href="{% url 'home' %}">Home</a> 
+                <a href="{% url 'galerie' %}">Technologies</a> 
+                <a href="{% url 'universities' %}">Faculties</a> 
+                <a href="{% url 'chatbot' %}">ChatBot</a> 
+                <a href="{% url 'login' %}">Logout</a> 
+            </nav> 
+        </div> 
+    </header> 
+
+    <main class="container"> 
+        <section class="columns"> 
+            <div class="column"> 
+                <h2>Faculties list</h2> 
+                <p>Here you will find detailed information about the faculties offering programs relevant to WT.</p> 
+                <a href="{% url 'universities' %}" class="btn">Check out more</a> 
+            </div> 
+
+            <div class="column"> 
+                <h2>Relevant Technologies</h2> 
+                <p>Discover the latest web technologies and frameworks used in industry and education.</p> 
+                <a href="{% url 'galerie' %}" class="btn">Check out more</a> 
+            </div> 
+
+            <div class="column"> 
+                <h2>ChatBot</h2> 
+                <p>Interact with our chatbot to get quick answers.</p> 
+                <a href="{% url 'chatbot' %}" class="btn">Check out more</a> 
+            </div> 
+        </section> 
+    </main> 
+
+    <footer> 
+        <div class="container"> 
+            <p>&copy; Web Technologies Community</p> 
+            <p> 
+                <a href="https://uvt.ro/" target="_blank">Universitatea de Vest din Timișoara</a> | 
+                <a href="https://info.uvt.ro/" target="_blank">Facultatea de Informatică</a> 
+            </p> 
+        </div> 
+    </footer> 
+    <script src="{% static 'TS/cursor.js' %}"></script>
+</body> 
+</html>

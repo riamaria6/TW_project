@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+{% load static %}
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Login Page</title> 
+  <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+  <link rel="stylesheet" href="{% static 'CSS/login_style.css' %}"> 
+</head> 
+<body> 
+
+  <div class="login_container"> 
+    <div class="login-image"> 
+      <img src="{% static 'MEDIA/TWlogin.png' %}" alt="Imagine login"> 
+    </div> 
+
+    <div class="login-form"> 
+      <h2>Login</h2> 
+      <form id="loginForm">
+        <input type="email" id="email" placeholder="Email"> 
+        <input type="password" id="password" placeholder="Password"> 
+        <button type="submit">Login</button> 
+      </form>
+
+      <p class="register-text"> 
+        Don't have an account? <a href="{% url 'register' %}">Register</a> 
+      </p> 
+    </div> 
+  </div>
+
+  <script src="{% static 'JS/login_js.js' %}"></script>
+</body>
+</body> 
+</html>

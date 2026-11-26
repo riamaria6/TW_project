@@ -1,0 +1,101 @@
+.uni-card {
+    background-color: #fef9ff;
+    padding: 28px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    width: 100%;
+}
+
+.uni-card h2 {
+    color: #4a155e;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.filter-bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+.filter-bar label {
+    font-weight: bold;
+    color: #4a155e;
+    font-size: 14px;
+}
+
+.filter-bar input {
+    flex: 1;
+    min-width: 220px;
+    padding: 10px 14px;
+    border: 2px solid #4a155e;
+    border-radius: 6px;
+    outline: none;
+    font-size: 14px;
+    background-color: #fef9ff;
+    color: #23072f;
+}
+
+.filter-bar input:focus {
+    border-color: #ea4dfb;
+}
+
+.filter-bar button {
+    border: none;
+    cursor: pointer;
+}
+
+.status {
+    opacity: 0.85;
+    margin: 10px 0 16px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #752293;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+    background: #fef9ff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th {
+    background-color: #4a155e;
+    color: #fbe9ff;
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ead6f5;
+    text-align: left;
+    vertical-align: top;
+    font-size: 14px;
+    color: #23072f;
+}
+
+tbody tr:hover {
+    background-color: #f6e8fc;
+}
+
+td a {
+    color: #752293;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+td a:hover {
+    color: #ea4dfb;
+    text-decoration: underline;
+}

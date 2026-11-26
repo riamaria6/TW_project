@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universități din România</title>
+    <link rel="stylesheet" href="{% static 'CSS/home_style.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/universities_style.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/cursor.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Web Technologies Community</h1>
+            <nav>
+                <a href="{% url 'home' %}">Home</a>
+                <a href="{% url 'galerie' %}">Technologies</a>
+                <a href="{% url 'universities' %}">Faculties</a>
+                <a href="{% url 'chatbot' %}">ChatBot</a>
+                <a href="{% url 'login' %}">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="uni-card">
+            <h2>Universități din România</h2>
+            
+            <div class="filter-bar">
+                <label for="q">Filtru (opțional):</label>
+                <input id="q" type="text" placeholder="caută după nume..." />
+                <button id="export-btn" class="btn">Export CSV</button>
+            </div>
+
+            <div id="status" class="status"></div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nume</th>
+                            <th>Țara</th>
+                            <th>Site</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody"></tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Web Technologies Community</p>
+            <p>
+                <a href="https://uvt.ro/" target="_blank">Universitatea de Vest din Timișoara</a> | 
+                <a href="https://info.uvt.ro/" target="_blank">Facultatea de Informatică</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="{% static 'JS/universities_js.js' %}"></script>
+    <script src="{% static 'TS/cursor.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+body { 
+  background: linear-gradient(135deg, #6d1e8b 0%, #d386f0 100%); 
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+} 
+
+.login_container { 
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 90%; 
+  max-width: 900px; 
+} 
+
+.login-image { 
+  flex: 1; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.login-image img { 
+  max-width: 100%; 
+  max-height: 380px; 
+  width: auto;
+  height: auto;
+  object-fit: contain; 
+} 
+
+.login-form { 
+  flex: 1; 
+  max-width: 400px;
+  background-color: #dbbce6; 
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  padding: 40px; 
+  box-sizing: border-box;
+  display: flex; 
+  flex-direction: column; 
+  color: #4a185c; 
+} 
+
+.login-form h2 { 
+  margin-top: 0;
+  margin-bottom: 25px; 
+  text-align: center; 
+  font-weight: bold; 
+  color: #4a185c;
+  font-size: 24px;
+} 
+
+.login-form input { 
+  width: 100%;
+  padding: 12px; 
+  margin-bottom: 15px; 
+  background-color: #e9d4fd; 
+  border: 1px solid #d4b0ea; 
+  border-radius: 8px; 
+  font-size: 14px; 
+  color: #4a185c;
+  box-sizing: border-box;
+} 
+
+.login-form input::placeholder {
+  color: #8b6b9e;
+}
+
+.login-form input:focus { 
+  outline: 2px solid #6c2689; 
+  background-color: #f1e2fe;
+} 
+
+.login-form button {
+  width: 100%;
+  padding: 14px; 
+  background-color: #6c2689; 
+  border: none; 
+  border-radius: 8px; 
+  color: white; 
+  font-size: 16px; 
+  font-weight: bold;
+  cursor: pointer; 
+  transition: background 0.3s; 
+} 
+
+.login-form button:hover { 
+  background-color: #551d6d; 
+} 
+
+.register-text { 
+  margin-top: 20px; 
+  margin-bottom: 0;
+  text-align: center; 
+  font-size: 14px; 
+  color: #5d11c2; 
+} 
+
+.register-text a { 
+  color: #752293; 
+  text-decoration: none; 
+  font-weight: bold; 
+  transition: color 0.3s; 
+} 
+
+.register-text a:hover { 
+  color: #6c2689; 
+  text-decoration: underline;
+}

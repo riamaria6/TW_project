@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+{% load static %}
+<html lang="ro"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>ChatBot</title> 
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/chatbot_style.css' %}"> 
+    <link rel="stylesheet" href="{% static 'CSS/home_style.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/cursor.css' %}">
+</head> 
+<body> 
+    <header> 
+        <div class="container"> 
+            <h1>Web Technologies Community</h1> 
+            <nav> 
+                <a href="{% url 'home' %}">Home</a> 
+                <a href="{% url 'galerie' %}">Technologies</a> 
+                <a href="{% url 'universities' %}">Faculties</a> 
+                <a href="{% url 'chatbot' %}">ChatBot</a> 
+                <a href="{% url 'login' %}">Logout</a> 
+            </nav> 
+        </div> 
+    </header> 
+
+    <main class="container chatbot-main"> 
+        <div class="chat-container" id="chat-container"></div> 
+
+        <form id="chat-form"> 
+            <input type="text" id="user-input" placeholder="Alege o opțiune (a, b, c)..."> 
+            <button type="submit" class="btn">Trimite</button> 
+        </form> 
+    </main> 
+
+    <footer> 
+        <div class="container"> 
+            <p>&copy; Web Technologies Community</p> 
+            <p> 
+                <a href="https://uvt.ro/" target="_blank">Universitatea de Vest din Timișoara</a> | 
+                <a href="https://info.uvt.ro/" target="_blank">Facultatea de Informatică</a> 
+            </p> 
+        </div> 
+    </footer> 
+
+    <script src="{% static 'JS/chatbot_js.js' %}"></script>
+    <script src="{% static 'TS/cursor.js' %}"></script>
+</body> 
+</html>
