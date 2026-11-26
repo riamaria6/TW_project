@@ -20,3 +20,6 @@ def universities(request):
 
 def galerie(request):
     return render(request, "HTML/galerie.html")
+
+def jokes(request):
+    return render(request, "HTML/jokes.html")

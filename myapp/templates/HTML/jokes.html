@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Jokes</title>
+    <link rel="stylesheet" href="{% static 'CSS/home_style.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/jokes_style.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/cursor.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Web Technologies Community</h1>
+            <nav>
+                <a href="{% url 'home' %}">Home</a>
+                <a href="{% url 'galerie' %}">Technologies</a>
+                <a href="{% url 'universities' %}">Faculties</a>
+                <a href="{% url 'jokes' %}">Jokes</a>
+                <a href="{% url 'chatbot' %}">ChatBot</a>
+                <a href="{% url 'login' %}">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="jokes-wrapper">
+            <h2>Tech & Programming Jokes</h2>
+
+            <form id="searchForm">
+                <input id="queryInput" type="text" placeholder="Search jokes by keyword (e.g. bug, code, Java, computer)...">
+                <button id="searchBtn" type="submit" class="btn">Search</button>
+            </form>
+
+            <p id="status" aria-live="polite"></p>
+            <div id="results"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Web Technologies Community</p>
+            <p>
+                <a href="https://uvt.ro/" target="_blank">Universitatea de Vest din Timișoara</a> | 
+                <a href="https://info.uvt.ro/" target="_blank">Facultatea de Informatică</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="{% static 'JS/jokes.js' %}"></script>
+    <script src="{% static 'TS/cursor.js' %}"></script>
+</body>
+</html>
